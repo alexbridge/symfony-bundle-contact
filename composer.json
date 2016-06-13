@@ -1,0 +1,21 @@
+{
+    "name": "alexbridge/symfony-bundle-contact",
+    "type": "symfony-bundle",
+    "description": "Bundle for Symfony 2 with a general contact form for your website",
+    "keywords": ["Symfony", "Symfony 2", "contact", "bundle", "contact form"],
+    "homepage": "https://github.com/alexbridge/symfony-bundle-contact",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexbridge",
+            "homepage": "https://github.com/alexbridge"
+        }
+    ],
+    "require": {
+      "symfony/framework-bundle": "~2.3",
+      "sensio/framework-extra-bundle": "~3.0,>=3.0.2"
+    },
+    "autoload": {
+        "psr-4": { "Alexo\\ContactBundle\\": "" }
+    }
+}

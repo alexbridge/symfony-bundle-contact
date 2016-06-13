@@ -1,0 +1,23 @@
+{% extends 'ContactBundle::layout.html.twig' %}
+
+{% block title %}{{ 'contact'|trans }}{% endblock %}
+
+{% block content %}
+
+    <h1>{{ 'contact'|trans }}</h1>
+    <p>{{ 'contact_description'|trans }}</p>
+
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+    {{ form_widget(form, {attr: {class: 'contact_form'}}) }}
+    {{ form_end(form) }}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script>
+      // Dynamic Bootstrap class to form controls
+      jQuery('.contact_form input[type="text"], .contact_form input[type="email"], .contact_form textarea').addClass('form-control');
+</script>
+{% endblock %}
